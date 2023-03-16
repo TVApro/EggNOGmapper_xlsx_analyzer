@@ -3,7 +3,9 @@ A small code part for extracting data from an Excel output file of EggNog-mapper
 
 Steps required for analysis:
 
-1. Load each genome into eggNog_mapper (http://eggnog-mapper.embl.de/), get Excel files as the output
+1.1. Obtain .faa files from the annotated genomes (you may use https://github.com/TVApro/UltraChtec for this)
+
+1.2. Load each .faa file into eggNog_mapper (http://eggnog-mapper.embl.de/), get Excel files as the output
 
 2. Remove the top two "technical" lines from each table
 
