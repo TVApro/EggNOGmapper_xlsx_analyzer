@@ -1,4 +1,4 @@
-# EggNOGmapper_Excel_analyzer
+# EggNOGmapper_xlsx_analyzer
 A small code part for extracting data from an Excel output file of EggNog-mapper v.2.0
 
 Steps required for analysis:
