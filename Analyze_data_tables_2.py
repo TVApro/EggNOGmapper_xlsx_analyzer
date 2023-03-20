@@ -6,13 +6,24 @@ import os
 import re
 from pathlib import Path
 
+def export(name, df, plus, folder_path):
+    export_name = plus + name
+    path_export = os.path.join(folder_path, export_name)
+    if os.path.isfile(path_export):
+        os.remove(path_export)
+    df.to_csv(path_export)
+
 # НАЧАЛО
 path_1 = '/home/trubitsyns/Рабочий стол/Кандидатская работа/Tables'
-path_2 = '/home/trubitsyns/Рабочий стол/Кандидатская работа/Output_Tables'
+path_2 = '/home/trubitsyns/Рабочий стол/Кандидатская работа/Tables_1_Total_number_of_genes'
 path_up = Path(path_2).parent
+path_output = os.path.join(path_up, 'Output_Tables_2')
 
 organisms_list = os.listdir(path_1)
 output_tables_list = os.listdir(path_2)
+
+if not os.path.isdir(path_output):
+    os.mkdir(path_output)
 
 for j in output_tables_list:
     path_j = os.path.join(path_2, j)
@@ -33,6 +44,6 @@ for j in output_tables_list:
                  & (db['CANT'] > db['WeN3'])]
     db_all = pd.concat([db_all_plus, probel_2, db_all_minus], axis=0)
     db_all = db_all[['Unnamed: 0', 'MoH', 'M2', 'MK4', 'AL-21', 'SMA-27', 'VT', 'congo', 'E09F3', 'SWAN1', 'BRM9', 'Mic5c12T', 'A8P', 'CANT', 'WeN3']]
-    print(db_arctic)
-    print(db_all)
     
+    export(j, db_arctic, 'arctic_', path_output)
+    export(j, db_all, 'all_', path_output)
