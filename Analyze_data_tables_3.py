@@ -6,14 +6,14 @@ import os
 from pathlib import Path
 
 # НАЧАЛО
-path_3 = '/home/trubitsyns/Рабочий стол/Кандидатская работа/Output_Tables_2' # таблицы подсчёта количеств белков
+path_3 = '/home/trubitsyns/Рабочий стол/Кандидатская работа/Tables_2_Quantifiably_changing_groups' # таблицы подсчёта количеств белков
 path_4 = '/home/trubitsyns/Рабочий стол/Кандидатская работа/Tables' # таблица с аннотацией генома
 path_up = Path(path_4).parent # исходная директория
 
 popular_genes_list = os.listdir(path_3)
 organism_list = os.listdir(path_4)
 
-path_output = os.path.join(path_up, 'Output_Tables_3')
+path_output = os.path.join(path_up, 'Tables_3_Genes_of_quantifiably_changing_groups')
 if not os.path.isdir(path_output):
     os.mkdir(path_output) # создание папки с выходящими файлами
 
