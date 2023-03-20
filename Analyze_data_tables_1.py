@@ -26,14 +26,8 @@ def export(name, folder_path):
 path = '/home/trubitsyns/Рабочий стол/Кандидатская работа/Tables'
 path_up = Path(path).parent
 
-#description = input("Введите название столбца, по которому хотите осуществить поиск? Проверьте название заранее: ")
-description = 'Description'
-
-#COG_group = input("Введите название группы COG, в пределах которой хотите осуществить поиск: ")
-COG_group = 'C'
-
 results_list = os.listdir(path)
-list_X = ['COG_category', 'GOs', 'EC', 'KEGG_ko', 'KEGG_Pathway', 'KEGG_Module', 'KEGG_Reaction', 'KEGG_rclass', 'BRITE', 'KEGG_TC', 'CAZy', 'BiGG_Reaction', 'PFAMs']
+list_X = ['COG_category', 'Description', 'GOs', 'EC', 'KEGG_ko', 'KEGG_Pathway', 'KEGG_Module', 'KEGG_Reaction', 'KEGG_rclass', 'BRITE', 'KEGG_TC', 'CAZy', 'BiGG_Reaction', 'PFAMs']
 for db in list_X:
     n = 0
     for i in results_list:
@@ -53,7 +47,7 @@ for db in list_X:
             if n == 1:
                 n = 0
             print("пропуск")
-    output_path = os.path.join(path_up, 'Output_Tables')
+    output_path = os.path.join(path_up, 'Tables_1_Total_number_of_genes')
     if not os.path.isdir(output_path):
         os.mkdir(output_path)
     export(db, output_path)
