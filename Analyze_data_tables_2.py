@@ -17,7 +17,7 @@ def export(name, df, plus, folder_path):
 path_1 = '/home/trubitsyns/Рабочий стол/Кандидатская работа/Tables'
 path_2 = '/home/trubitsyns/Рабочий стол/Кандидатская работа/Tables_1_Total_number_of_genes'
 path_up = Path(path_2).parent
-path_output = os.path.join(path_up, 'Output_Tables_2')
+path_output = os.path.join(path_up, 'Tables_2_Quantifiably_changing_groups')
 
 organisms_list = os.listdir(path_1)
 output_tables_list = os.listdir(path_2)
