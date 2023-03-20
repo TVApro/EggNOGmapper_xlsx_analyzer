@@ -65,12 +65,12 @@ for j in popular_genes_list:
                                 db_all = pd.merge(db_all, db, how='outer')
                 except:
                     pass
-        output_arctic = os.path.join(path_output, "arctic_genes_"+j)
-        output_all = os.path.join(path_output, "all_genes_"+j)
+
+        output = os.path.join(path_output, "genes_"+j)
         if POP["Unnamed: 0"].empty == False:
             if 'arctic_' in j:
-                db_arctic.to_csv(output_arctic)
+                db_arctic.to_csv(output)
                 db_arctic = pd.DataFrame()
             if 'all_' in j:
-                db_all.to_csv(output_all)
+                db_all.to_csv(output)
                 db_all = pd.DataFrame()
