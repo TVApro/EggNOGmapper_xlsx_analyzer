@@ -6,8 +6,8 @@ import os
 from pathlib import Path
 
 # НАЧАЛО
-path_3 = '/media/lab330/Новый том/EggNOG/Output_Tables_2' # таблицы подсчёта количеств белков
-path_4 = '/media/lab330/Новый том/EggNOG/Tables' # таблица с аннотацией генома
+path_3 = '/home/trubitsyns/Рабочий стол/Кандидатская работа/Output_Tables_2' # таблицы подсчёта количеств белков
+path_4 = '/home/trubitsyns/Рабочий стол/Кандидатская работа/Tables' # таблица с аннотацией генома
 path_up = Path(path_4).parent # исходная директория
 
 popular_genes_list = os.listdir(path_3)
@@ -57,17 +57,15 @@ for j in popular_genes_list:
                                 db_arctic = db
                             if n > 1:
                                 db_arctic = pd.merge(db_arctic, db, how='outer')
-                            print(db_arctic)
                         if 'all_' in j:
                             m += 1
                             if m == 1:
                                 db_all = db
                             if m > 1:
                                 db_all = pd.merge(db_all, db, how='outer')
-                            print(db_all)
                 except:
                     pass
-        output_arctic = os.path.join(path_output, j+"_arctic_genes")
+        output_arctic = os.path.join(path_output, "arctic_genes_"+j)
         output_all = os.path.join(path_output, "all_genes_"+j)
         if POP["Unnamed: 0"].empty == False:
             if 'arctic_' in j:
