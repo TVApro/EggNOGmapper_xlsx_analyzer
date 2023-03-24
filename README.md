@@ -1,20 +1,41 @@
 # EggNOGmapper_xlsx_analyzer
-A small code part for extracting data from an Excel output file of EggNog-mapper v.2.0
+Extracting data from an Excel output files of EggNog-mapper v.2.0
 
-Steps required for analysis:
+## Requirements
+Python3 (modules pandas, openpxl, pathlib)
+bash (Linux OS)
+Prodigal (not required, if you previously annotate whole genomes on eggNog_mapper with option "Prodigal")
 
-1.1. Obtain .faa files from the annotated genomes (you may use https://github.com/TVApro/UltraChtec for this)
+## Steps for analysis
 
-1.2. Load each .faa file into eggNog_mapper (http://eggnog-mapper.embl.de/), get Excel files as the output
+1. Obtain .faa files fron the genomes FASTA (I strongly recommend Prodigal for this)
 
-2. Remove the top two "technical" lines from each table
+2. Load each .faa file into eggNog_mapper (http://eggnog-mapper.embl.de/), get Excel files as the output
 
-3. Put all tables in one folder
+3. Remove the top two "technical" lines from each table
 
-4. Run the script using any IDE for Python
+4. Put all tables in one folder (as in the example "Tables..." folders)
 
-4.1 By default, it counts the number of proteins in COG groups and builds a summary table for all genomes
+5. Run the whole program (for Linux - "start.sh")
 
-4.2. You can optionally sort the data in any presented column by choosing column name
+6. You may use any IDE for using any part of programm
 
-5. The result can be copied from the IDE or saved as a .csv table
+## Program files
+
+ADT_1 - Counts the number of annotations of each type for each specified database
+
+ADT_2 - Calculates those groups of annotations, the change in the number of which satisfies the conditions (the conditions are written in the file, they can be changed by indicating the names of the corresponding genomes without ".xlsx" and the required ratio)
+
+ADT_3 - Finds genes corresponding to the selected groups from the previous program, and writes out each group of genes for each organism separately
+
+ADT_4 - Consolidates all genes from the output of the previous program into one file
+
+Faa_control.py - a small piece of code for pairwise comparison of FAA file sizes
+
+single_group_analyzer.py - the first version of the program, able to search for the genes of one specific group (by default - COG). Don't finished yet
+
+/PRODIGAL/prodigal__all.sh - a small script for annotating a large number of genomes using Prodigal
+
+start.sh - script that runs the program in the sequence ADT_1, ADT_2, ADT_3, ADT_4
+
+
