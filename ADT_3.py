@@ -15,7 +15,7 @@ path_up = Path(path_4).parent # исходная директория
 popular_genes_list = os.listdir(path_3)
 organism_list = os.listdir(path_4)
 
-path_output = os.path.join(path_up, sys.argv[2]+'_3_Genes_subsets_in_quantifiably_changing_groups')
+path_output = os.path.join(path_up, sys.argv[2]+'_3_Genes_subsets_of_quantifiably_changing_groups')
 if not os.path.isdir(path_output):
     os.mkdir(path_output) # создание папки с выходящими файлами
 

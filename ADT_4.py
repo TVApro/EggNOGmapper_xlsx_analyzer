@@ -2,19 +2,20 @@
 # третья часть для исследования результатов работы EggNOG
 
 import pandas as pd
-import os
+import os, sys
 import openpyxl
 from pathlib import Path
 
 # НАЧАЛО
-path_3 = '/media/lab330/Новый том/EggNOG/Tables_3_Genes_subsets_in_quantifiably_changing_groups' # таблицы подсчёта количеств белков
-path_4 = '/media/lab330/Новый том/EggNOG/Tables' # таблица с аннотацией генома
+
+path_3 = os.path.join(os.getcwd(), sys.argv[2]+sys.argv[1]) # таблицы подсчёта количеств белков
+path_4 = os.path.join(os.getcwd(), sys.argv[2]) # таблица с аннотацией генома
 path_up = Path(path_4).parent # исходная директория
 
 genes_of_organism_list = os.listdir(path_3)
 organism_list = os.listdir(path_4)
 
-path_output = os.path.join(path_up, 'Tables_4+_I_dont_know_for_what_it_is')
+path_output = os.path.join(path_up, sys.argv[2]+'_4_All-in-one_genes_of_quantifiably_changing_groups')
 if not os.path.isdir(path_output):
     os.mkdir(path_output) # создание папки с выходящими файлами
 
