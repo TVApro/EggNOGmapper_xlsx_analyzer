@@ -1,0 +1,49 @@
+,Unnamed: 0,MoH,M2,MK4,AL-21,SMA-27,VT
+27,Polysaccharide biosynthesis protein,6.0,7.0,7.0,4.0,6.0,6.0
+45,Methyltransferase,5.0,6.0,6.0,2.0,3.0,3.0
+55,COG0589 Universal stress protein UspA and related nucleotide-binding proteins,5.0,6.0,6.0,4.0,5.0,6.0
+57,Roadblock LC7 family protein,5.0,7.0,7.0,3.0,4.0,5.0
+111,Nitroreductase family,3.0,4.0,4.0,1.0,3.0,2.0
+153,Histidine kinase,3.0,4.0,4.0,3.0,5.0,5.0
+214,PFAM blue (type 1) copper domain protein,2.0,3.0,3.0,0.0,3.0,1.0
+219,"COG1853 Conserved protein domain typically associated with flavoprotein oxygenases, DIM6 NTAB family",2.0,3.0,3.0,0.0,2.0,1.0
+243,SpoVT / AbrB like domain,2.0,3.0,3.0,0.0,1.0,2.0
+659,Antibiotic biosynthesis monooxygenase,1.0,2.0,2.0,1.0,2.0,2.0
+1065,divalent heavy-metal cations transporter,1.0,2.0,2.0,0.0,1.0,1.0
+1283,"PFAM Integrase, catalytic core, phage",1.0,3.0,3.0,1.0,4.0,3.0
+1707,Phospholipid methyltransferase,0.0,2.0,2.0,0.0,1.0,1.0
+1711,Protein of unknown function with HXXEE motif,0.0,1.0,1.0,0.0,1.0,1.0
+1713,O-methyltransferase,0.0,1.0,1.0,0.0,1.0,1.0
+1722,ABC-type multidrug transport system ATPase and permease,0.0,1.0,1.0,0.0,1.0,1.0
+1745,Lipocalin-like domain,0.0,1.0,1.0,0.0,1.0,2.0
+0,,,,,,,
+3,PFAM Glycosyl transferase family 2,16.0,15.0,15.0,12.0,10.0,11.0
+6,"PFAM 4Fe-4S ferredoxin, iron-sulfur binding domain protein",15.0,13.0,13.0,13.0,11.0,9.0
+13,Major facilitator superfamily,9.0,7.0,7.0,6.0,3.0,4.0
+29,PFAM Oligosaccharyl transferase STT3 subunit,6.0,4.0,4.0,2.0,1.0,1.0
+33,PFAM ABC-2 type transporter,6.0,5.0,5.0,7.0,5.0,5.0
+37,"Rubredoxin is a small nonheme, iron protein lacking acid-labile sulfide. Its single Fe, chelated to 4 Cys, functions as an electron acceptor and may also stabilize the conformation of the molecule",6.0,5.0,5.0,4.0,3.0,3.0
+94,ABC-type multidrug transport system ATPase component,3.0,2.0,2.0,2.0,1.0,1.0
+105,PD-(D/E)XK nuclease superfamily,3.0,1.0,1.0,2.0,0.0,0.0
+126,Catalyzes the reduction of hydroxylamine to form NH(3) and H(2)O,3.0,2.0,2.0,2.0,1.0,1.0
+127,TIGRFAM parallel beta-helix,3.0,2.0,2.0,1.0,0.0,0.0
+151,"Serine aminopeptidase, S33",3.0,2.0,2.0,1.0,0.0,0.0
+165,Binds and transfers iron-sulfur (Fe-S) clusters to target apoproteins. Can hydrolyze ATP,3.0,2.0,2.0,1.0,0.0,0.0
+170,Predicted membrane protein (DUF2142),3.0,2.0,2.0,1.0,0.0,0.0
+203,Chagasin family peptidase inhibitor I42,2.0,1.0,1.0,2.0,1.0,1.0
+211,COG0463 Glycosyltransferases involved in cell wall biogenesis,2.0,1.0,1.0,3.0,0.0,1.0
+238,UvrD/REP helicase N-terminal domain,2.0,1.0,1.0,2.0,0.0,0.0
+241,TIGRFAM CRISPR locus-related DNA-binding,2.0,1.0,1.0,1.0,0.0,0.0
+242,Belongs to the eukaryotic ribosomal protein eL40 family,2.0,1.0,1.0,2.0,0.0,1.0
+275,Heterodisulfide reductase subunit,2.0,1.0,1.0,3.0,1.0,2.0
+314,PFAM Cysteine-rich,2.0,1.0,1.0,3.0,1.0,2.0
+329,Predicted membrane protein (DUF2207),2.0,1.0,1.0,2.0,1.0,1.0
+353,"Phage plasmid primase, P4",2.0,1.0,1.0,1.0,0.0,0.0
+384,Protein of unknown function (DUF2971),2.0,0.0,0.0,1.0,0.0,0.0
+410,"ABC-type transporter, periplasmic subunit",2.0,1.0,1.0,2.0,1.0,0.0
+443,Sulfur transfer protein involved in thiamine biosynthesis,1.0,0.0,0.0,3.0,1.0,1.0
+688,methanogenesis marker protein 11,1.0,0.0,0.0,2.0,0.0,0.0
+689,PFAM PKD domain,1.0,0.0,0.0,1.0,0.0,0.0
+690,PFAM MotA TolQ ExbB proton channel,1.0,0.0,0.0,2.0,1.0,0.0
+1027,Domain of unknown function (DUF3578),1.0,0.0,0.0,1.0,0.0,0.0
+1206,"ATP-binding region, ATPase domain protein domain protein",1.0,0.0,0.0,1.0,0.0,0.0
