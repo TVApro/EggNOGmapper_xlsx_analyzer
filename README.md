@@ -2,8 +2,11 @@
 Extracting data from an Excel output files of EggNog-mapper v.2.0
 
 ## Requirements
+
 Python3 (modules pandas, openpxl, pathlib)
+
 bash (Linux OS)
+
 Prodigal (not required, if you previously annotate whole genomes on eggNog_mapper with option "Prodigal")
 
 ## Steps for analysis
