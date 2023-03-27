@@ -3,7 +3,7 @@ Extracting data from an Excel output files of EggNog-mapper v.2.0
 
 ## Purpose of the program
 
-I wrote it to defend my dissertation, so the materials I use are attached to it, which can be used as examples of launches
+I wrote it to defend my dissertation, so the materials I used are attached to it. They can be used as examples of launches
 
 ## Requirements
 
