@@ -15,7 +15,7 @@ Prodigal (not required, if you previously annotate whole genomes on eggNog_mappe
 
 ## Steps for analysis
 
-1. Obtain .faa files fron the genomes FASTA (I strongly recommend Prodigal for this)
+1. Obtain .faa files from the genomes FASTA (I strongly recommend Prodigal for this)
 
 2. Load each .faa file into eggNog_mapper (http://eggnog-mapper.embl.de/), get Excel files as the output
 
